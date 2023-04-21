@@ -6,9 +6,6 @@ import '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ElButton: typeof import('element-ui/lib/button')['default']
-    ElForm: typeof import('element-ui/lib/form')['default']
-    ElFormItem: typeof import('element-ui/lib/form-item')['default']
-    ElInput: typeof import('element-ui/lib/input')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

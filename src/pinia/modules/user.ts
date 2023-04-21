@@ -1,9 +1,10 @@
 import { localGet, localRemove, localSet } from 'lingman-web'
+import { skipHydrate } from 'pinia'
 import { Api } from '../../api/user'
 import { resetRouter } from '@/router'
 
 export const useUserStore = defineStore('user', () => {
-  const token = ref<string>(localGet('token') || '')
+  const token = ref<string>((!import.meta.env.SSR && localGet('token')) || '')
   const name = ref('')
   const avatar = ref('')
 
@@ -39,9 +40,9 @@ export const useUserStore = defineStore('user', () => {
   }
 
   return {
-    token,
-    name,
-    avatar,
+    token: skipHydrate(token),
+    name: skipHydrate(name),
+    avatar: skipHydrate(avatar),
     login,
     getInfo,
     logout,
