@@ -60,6 +60,7 @@ const createRouter = () => new Router({
   // @ts-expect-error xxx
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRoutes,
+  mode: 'history',
 })
 
 const router = createRouter()

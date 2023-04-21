@@ -41,5 +41,8 @@ export default defineConfig({
   server: {
     port: 5409,
   },
-
+  base: './',
+  ssr: {
+    format: 'cjs',
+  },
 })
