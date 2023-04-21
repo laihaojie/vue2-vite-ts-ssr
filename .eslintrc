@@ -1,0 +1,7 @@
+{
+    "extends": ["@djie"],
+    "rules": {
+        "vue/no-deprecated-slot-attribute": "off",
+        "vue/no-deprecated-filter": "off"
+    }
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- use triple mustache for non-HTML-escaped interpolation -->
+    {{{ meta }}}
+    <!-- use double mustache for HTML-escaped interpolation -->
+    <title>{{ title }}</title>
+  </head>
+
+  <body>
+    <!--vue-ssr-outlet-->
+    <script type="module" src="/src/entry-client.ts"></script>
+    <script>
+      // prettier-ignore
+      window.__INITIAL_STATE__ = '<!--pinia-state-->'
+    </script>
+  </body>
+</html>
