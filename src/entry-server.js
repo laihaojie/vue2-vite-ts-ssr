@@ -10,7 +10,6 @@ import { app, pinia, router } from './main'
  */
 export function render(url, manifest, template) {
   return new Promise((resolve, reject) => {
-    console.log(url)
     router.push(url).catch((err) => {
       if (err.name === 'NavigationDuplicated') {
         // 路由重复，忽略错误

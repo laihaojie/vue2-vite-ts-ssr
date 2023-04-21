@@ -1,3 +1,4 @@
+<!-- eslint-disable no-console -->
 <script>
 import { useUserStore } from '@/pinia'
 import { validUsername } from '@/utils/validate'

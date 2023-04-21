@@ -42,6 +42,10 @@ export default defineConfig({
     port: 5409,
   },
   base: './',
+  build: {
+    // ssr 时样式导致的闪烁
+    cssCodeSplit: false,
+  },
   ssr: {
     format: 'cjs',
   },
