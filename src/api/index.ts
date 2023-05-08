@@ -2,7 +2,7 @@ import { Get, Post, service } from 'lingman-web'
 
 export const Api = {
   // 测试接口Get
-  testGet: () => Get('/api/account/get'),
+  testGet: () => Get('/api'),
 
   // 测试接口Post
   tesPost: data => Post('/api/account/post', data),

@@ -10,3 +10,5 @@ dist
 dist-ssr
 *.local
 /src/Meta.ts
+/package-lock.json
+/pnpm-lock.yaml

@@ -17,7 +17,7 @@ export function render(url, manifest, template) {
       }
       reject(err)
     })
-
+    
     // wait until router has resolved possible async hooks
     router.onReady(() => {
       const matchedComponents = router.getMatchedComponents()
@@ -32,9 +32,8 @@ export function render(url, manifest, template) {
       })
       const context = {
         title: import.meta.env.VITE_APP_TITLE || 'Vue APP',
-        meta: `<meta name="description" content="${
-          import.meta.env.VITE_APP_DESCRIPTION
-        }"/>`,
+        meta: `<meta name="description" content="${import.meta.env.VITE_APP_DESCRIPTION
+          }"/>`,
       }
       const state = JSON.stringify(pinia.state.value)
 

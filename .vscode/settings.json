@@ -9,5 +9,8 @@
     "postcss",
     "vue"
   ],
-  "volar.icon.preview": true
+  "volar.icon.preview": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
